@@ -1,0 +1,795 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: linear-gradient(to bottom, #ff66b2, #66a3ff);
+  padding: 10px 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+}
+
+.nav-items a {
+  display: none;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav span {
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  margin-left: -25px;
+}
+
+.top-nav img {
+  width: 80px;
+  height: 80px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.search,
+.shopping-cart {
+  display: none;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+section {
+  opacity: 0.2;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  row-gap: 10px;
+}
+
+.hero-side {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.hero-side h1 {
+  font-size: 18px;
+}
+
+.hero-side div span {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.btn1 {
+  background-color: white;
+}
+
+.btn1:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn2 {
+  background-color: rgb(224, 169, 178);
+}
+
+.btn2:hover {
+  background-color: rgb(231, 77, 103);
+  transition: background-color 0.3s ease-in-out;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-whatsapp {
+  width: 20px;
+  height: 20px;
+  color: green;
+}
+
+.hero-shoe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  margin-left: -50px;
+}
+
+.hero-shoe > img {
+  width: 90vw;
+  height: 16rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-side > button {
+  display: none;
+}
+
+.popular-section h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.popular-shoe-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+  font-size: 18px;
+  width: 80%;
+  text-align: center;
+}
+
+.popular-shoe-text > img {
+  width: 20px;
+  height: 20px;
+}
+
+.popular-shoes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.popular-shoes > div > img {
+  width: 100%;
+  height: 16rem;
+  border-radius: 15px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.popular-shoes img:hover {
+  transform: scale(1.04);
+}
+
+.training-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 25px;
+}
+
+.training-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.training-intro > h2 {
+  font-size: 40px;
+}
+
+.training-intro p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.training-pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.training-pics-div1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.training-pic1,
+.training-pic2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.training-pic3 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  background-color: #ff66b2;
+}
+
+.featured-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.featured iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.flash-sale {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.flash-sale div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.flash-sale div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.testimonials {
+  padding: 30px;
+  text-align: center;
+}
+
+.testimonials > div {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.testimonials img {
+  width: 100%;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px 30px;
+}
+
+.testimonials-card > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.testimonials > div > img {
+  border-radius: 15px;
+}
+
+.testimonials-card > div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonials-name {
+  font-size: 25px;
+}
+
+.testimonials-title {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.testimonials-card div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonials-card > p::before,
+.testimonials-card > p::after {
+  content: "\201C";
+  font-size: 4em;
+  color: #333;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.testimonials-card > p::after {
+  content: "\201D";
+  margin-left: 5px;
+}
+
+.navigation-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-buttons button {
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #cf76a3;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active-indicator {
+  background-color: #333;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px;
+  text-align: center;
+  background-color: #66a3ff;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.subscribe-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 25px;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 10px;
+}
+
+.subscribe input,
+.subscribe button {
+  padding: 10px 25px;
+}
+
+.subscribe input {
+  border: 0.2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  outline: none;
+}
+
+.subscribe input:focus {
+  outline: none;
+}
+
+.subscribe button {
+  padding: 10px;
+  font-size: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  background-color: rgb(224, 169, 178);
+}
+
+.subscribe button:hover {
+  background-color: rgb(231, 77, 103);
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+
+.subscribe img {
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  background-color: #ff66b2;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+}
+
+footer > :nth-child(1) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding-right: 7px;
+}
+
+footer a {
+  padding-top: 8px;
+  text-decoration: none;
+}
+
+@media (min-width: 400px) {
+  .hero-side h1 {
+    font-size: 20px;
+  }
+
+  .featured iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 600px) {
+  .hero-shoe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    margin-left: 20px;
+    height: 55vh;
+  }
+
+  .hero-shoe > img {
+    width: 70vw;
+    height: 25rem;
+  }
+
+  .popular-shoes > div > img {
+    margin: auto;
+    height: 20rem;
+  }
+
+  .subscribe-side {
+    row-gap: 15px;
+  }
+
+  .subscribe form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    margin: 0;
+    padding: 10px 45px;
+  }
+
+  .subscribe input {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .subscribe button {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .subscribe button:hover {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 801px) {
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .nav-items a {
+    display: flex;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-items a:hover {
+    background-color: #66a3ff;
+    border: #66a3ff;
+    transform: scale(1.3);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
+  }
+
+  .search,
+  .shopping-cart {
+    display: inline-flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #typewriter {
+    font-size: 30px;
+  }
+
+  .hero-side > p {
+    font-size: 20px;
+  }
+
+  .hero-shoe {
+    height: 60vh;
+  }
+
+  .popular-shoes > div > img {
+    height: 25rem;
+  }
+
+  .popular-shoe-text {
+    font-size: 22px;
+    width: 90%;
+  }
+
+  .training-intro > h2 {
+    font-size: 50px;
+  }
+
+  .training-pics-div1 p:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .featured-div span {
+    font-size: 18px;
+  }
+
+  .featured-div p,
+  .flash-sale p,
+  .testimonials-card p,
+  .about-us p,
+  .subscribe p {
+    font-size: 20px;
+  }
+
+  .testimonials-card div {
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .navigation-buttons {
+    width: 75%;
+    margin: 20px auto;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    margin: 0;
+    padding: 10px 60px;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-section {
+    flex-direction: row;
+  }
+
+  .hero-section > button {
+    display: none;
+  }
+
+  .hero-side > button {
+    display: block;
+    margin: auto 0;
+  }
+
+  .hero-side {
+    width: 50%;
+  }
+
+  .hero-side h1 {
+    font-size: 20px;
+  }
+
+  .hero-shoe {
+    margin-left: 0;
+    height: 70vh;
+  }
+
+  .hero-shoe > img {
+    width: 50vw;
+    height: 100%;
+  }
+
+  .popular-section {
+    padding: 50px 30px;
+  }
+
+  .popular-shoes {
+    flex-direction: row;
+  }
+
+  .popular-shoes > div {
+    width: 33.3%;
+  }
+
+  .popular-shoes > div > img {
+    width: 90%;
+    height: 16rem;
+    display: flex;
+  }
+
+  .popular-shoe-text {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .training-section {
+    padding: 50px 30px;
+  }
+
+  .training-pics {
+    flex-direction: row;
+    column-gap: 8px;
+  }
+
+  .training-pics-div1 img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .training-pics-div1 {
+    width: 40%;
+  }
+
+  .training-pics-div2 {
+    width: 60%;
+  }
+
+  .training-pic3 {
+    display: inline-block;
+    object-fit: fill;
+    object-position: center;
+  }
+
+  .featured-div h1,
+  .flash-sale h1,
+  .testimonials h1,
+  .about-us h1,
+  .subscribe h1 {
+    font-size: 30px;
+  }
+
+  .featured {
+    padding: 50px 40px;
+  }
+
+  .flash-sale {
+    padding: 50px 30px;
+  }
+
+  .flash-sale div {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  .flash-sale div img {
+    width: 32%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .testimonials {
+    padding: 50px 30px;
+  }
+
+  .testimonials > div {
+    flex-direction: row;
+    margin: 15px 0;
+  }
+
+  .testimonials > div > img {
+    width: 50%;
+    object-fit: cover;
+  } 
+
+  .about-us {
+    padding: 15vh 30px;
+  }
+
+  .subscribe {
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .subscribe img {
+    width: 50%;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+  footer > :nth-child(1) {
+    width: 30%;
+  }
+
+  footer > :nth-child(n + 2) {
+    width: 17.5%;
+  }
+
+  footer h3 {
+    padding-bottom: 20px;
+  }
+}

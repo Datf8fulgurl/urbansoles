@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Urban Soles</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="top-nav">
+          <img src="images/logo.png" alt="" srcset="" />
+          <span>Urban Soles</span>
+        </a>
+        <div class="nav-items">
+          <a href="index.html">Home</a>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="kids.html">Kids</a>
+          <a href="#about-us">About</a>
+        </div>
+        <div class="icons">
+          <img
+            class="search"
+            src="https://img.icons8.com/ios/icon/132/search"
+            alt=""
+          />
+          <img
+            class="shopping-cart"
+            src="https://img.icons8.com/ios/icon/9671/shopping-cart"
+            alt=""
+          />
+          <img class="profile-pic" src="images/profile-pic.jpg" alt="" />
+          <img
+            class="hamburger"
+            src="https://img.icons8.com/ios/icon/8113/menu"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </nav>
+      <section class="hero-section">
+        <div class="hero-side">
+          <h1 id="typewriter"></h1>
+          <p>
+            Introducing the Nike Air Max Plus, a pinnacle of athletic footwear.
+            This shoe combines sleek design with cutting-edge comfort, featuring
+            a signature Swoosh logo, responsive cushioning technology, and a
+            durable outsole for optimal performance. With a focus on both style
+            and function, this versatile shoe is perfect for sports or casual
+            wear, ensuring a comfortable and secure fit in every step.
+          </p>
+          <div>
+            <span>Price ---- ₦25,000</span>
+            <select name="size" id="sizeSelect">
+              <option value="40">40</option>
+              <option value="43">43</option>
+              <option value="48">48</option>
+            </select>
+          </div>
+            <!-- <button class="btn btn1" onclick="sendMessage(name, selectedSize)">
+              Buy Now
+              <img
+                src="https://img.icons8.com/ios/icon/16733/whatsapp"
+                alt=""
+              />
+            </button> -->
+            <!-- <button class="btn btn2">Add to Cart</button> -->
+            <button class="btn btn1" id="heroButton">
+              Buy Now
+              <img
+                src="https://img.icons8.com/ios/icon/16733/whatsapp"
+                alt=""
+                class="hero-whatsapp"
+              />
+            </button>
+        </div>
+        <div class="hero-shoe">
+          <img src="images/shoe-no-bg.png" id="hero-shoe-img" alt="" />
+        </div>
+        <button class="btn btn1" id="heroButton">
+          Buy Now
+          <img
+            src="https://img.icons8.com/ios/icon/16733/whatsapp"
+            alt=""
+            class="hero-whatsapp"
+          />
+        </button>
+      </section>
+    </header>
+
+    <section class="popular-section">
+      <h1>Popular</h1>
+      <div class="popular-shoes">
+        <div>
+          <img src="images/shoe1.jpg" alt="" />
+          <div class="popular-shoe-text">
+            <span>Air Max</span>
+            <span>₦15,000</span>
+            <img
+              src="https://img.icons8.com/ios/icon/16733/whatsapp"
+              alt=""
+              onclick="sendMessage('Air Max')"
+            />
+          </div>
+        </div>
+        <div>
+          <img src="images/shoe2.jpg" alt="" />
+          <div class="popular-shoe-text">
+            <span>Air React</span>
+            <span>₦18,000</span>
+            <img
+              src="https://img.icons8.com/ios/icon/16733/whatsapp"
+              alt=""
+              onclick="sendMessage('Air React')"
+            />
+          </div>
+        </div>
+        <div>
+          <img src="images/shoe3.jpg" alt="" />
+          <div class="popular-shoe-text">
+            <span>Lebron 17</span>
+            <span>₦20,000</span>
+            <img
+              src="https://img.icons8.com/ios/icon/16733/whatsapp"
+              alt=""
+              onclick="sendMessage('Lebron 17')"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="training-section">
+      <div class="training-intro">
+        <h2>DESIGNED FOR TRAINING</h2>
+        <p>Nike run</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta
+          temporibus neque. Dignissimos quaerat dolore quibusdam voluptatem.
+          Excepturi, rem corrupti odio blanditiis cum ullam quidem iusto laborum
+          autem dolor saepe.
+        </p>
+      </div>
+      <div class="training-pics">
+        <div class="training-pics-div1">
+          <img src="images/shoe1.jpg" alt="" class="training-pic1" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            reiciendis laborum vero dolorum accusamus ducimus optio.
+          </p>
+          <img src="images/shoe1.jpg" alt="" class="training-pic2" />
+        </div>
+        <div class="training-pics-div2">
+          <img src="images/shoe1.jpg" alt="" class="training-pic3" />
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="featured-div">
+        <span>Video</span>
+        <h1>Desire the feel of satisfaction</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+          consectetur dolorum vel et reprehenderit quidem laudantium omnis!
+          Nobis, eius delectus consequatur explicabo tempora totam obcaecati
+          consequuntur illum exercitationem deserunt accusamus.
+        </p>
+      </div>
+      <iframe
+        type="text/html"
+        width="350"
+        height="300"
+        src="https://www.youtube.com/embed/Ax09Mrn200s"
+        frameborder="0"
+      >
+      </iframe>
+    </section>
+
+    <section class="flash-sale">
+      <h1>Flash Sale</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+        laudantium sunt molestiae pariatur. Modi aperiam deleniti esse atque
+        nesciunt dolores. Maiores eum laborum suscipit eius enim possimus quasi
+        quaerat in?
+      </p>
+      <div>
+        <img src="images/shoe1.jpg" alt="" />
+        <img src="images/shoe2.jpg" alt="" />
+        <img src="images/shoe3.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h1>Testimonials</h1>
+      <div>
+        <div>
+          <div class="testimonials-card" id="testimonials-card">
+            <div>
+              <img src="images/profile-pic.jpg" alt="" />
+              <div>
+                <p class="testimonials-name">Segun Ajibola</p>
+                <p class="testimonials-title">CEO at FedX</p>
+              </div>
+            </div>
+            <p>
+              Ldorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              eaque praesentium! A laborum dolorem numquam consectetur, quidem
+              nihil accusantium, temporibus unde quaerat et harum iure provident
+              dignissimos optio at blanditiis?
+            </p>
+          </div>
+
+          <div class="navigation-buttons">
+            <button onclick="prevTestimonial()">Swipe Left</button>
+            <div class="indicators" id="indicators"></div>
+            <button onclick="nextTestimonial()">Swipe Right</button>
+          </div>
+        </div>
+
+        <img src="images/shoe2.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="about-us">
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia eum
+        doloribus neque nobis labore? Tenetur, maxime sapiente asperiores
+        adipisci commodi molestias vitae exercitationem et. Incidunt tempore
+        quae natus voluptate rerum! Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Nam nobis iusto sunt et quisquam? Possimus sint fuga
+        similique in obcaecati eius voluptatum, suscipit veniam ab nobis,
+        nostrum voluptatem reprehenderit illo.
+      </p>
+    </section>
+
+    <section class="subscribe">
+      <div class="subscribe-side">
+        <h1>Subscribe</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor autem
+          esse ullam eius, itaque nobis error similique debitis mollitia
+          blanditiis, harum cumque laborum animi reiciendis illo iste incidunt
+          ea quaerat?
+        </p>
+        <form>
+          <input type="text" name="" id="" placeholder="input your email" />
+          <button>Submit</button>
+        </form>
+      </div>
+      <img src="images/shoe2.jpg" alt="" />
+    </section>
+
+    <footer>
+      <div>
+        <h1>Urban Soles</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          eligendi, veniam cum architecto harum eveniet ut nam quod qui cumque
+          quas
+        </p>
+        <div>
+          <img src="https://img.icons8.com/ios/icon/118466/facebook" alt="" />
+          <img src="https://img.icons8.com/ios/icon/111057/x" alt="" />
+          <img src="https://img.icons8.com/ios/icon/32309/instagram" alt="" />
+          <img src="https://img.icons8.com/ios/icon/16733/whatsapp" alt="" />
+        </div>
+      </div>
+      <div>
+        <h3>Business Type</h3>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+      </div>
+      <div>
+        <h3>Business Type</h3>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+      </div>
+      <div>
+        <h3>Business Type</h3>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+      </div>
+      <div>
+        <h3>Business Type</h3>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+        <a href="">Example</a>
+      </div>
+    </footer>
+
+    <script type="module" src="script/script.js"></script>
+  </body>
+</html>
