@@ -35,7 +35,7 @@ function sendMessage(name, selectedSize = undefined) {
   }
 
   let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
-  window.open(whatsappLink, "_self");
+  window.open(whatsappLink, "_blank");
 }
 
 function checkFade() {
